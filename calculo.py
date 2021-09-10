@@ -11,7 +11,7 @@ def calculo():
     ###########################################################################
     st.write("**a) Caudal requerido por el número de trabajadores (QTr)**")
     col1, col2 = st.columns([2, 2])
-    image2 = Image.open('imagenes/2.jpg')
+    image2 = Image.open('imagenes/rsz_2.jpg')
     col1.image(image2)
     with col1.expander("Info", expanded=False):
         st.info("""
@@ -20,7 +20,7 @@ def calculo():
         - F = Caudal mínimo por persona de acuerdo a escala establecida en el artículo 247 del reglamento
         - N = Número de trabajadores de la guardia más numerosa
         """)
-    image14 = Image.open('imagenes/14.jpg')
+    image14 = Image.open('imagenes/rsz_14.jpg')
     col1.image(image14)
     F = col2.number_input('Caudal mínimo',value=4)
     N = col2.number_input('Número de trabajadores',value=428)
@@ -34,7 +34,7 @@ def calculo():
     ##########################################################################
     st.write("**b) Caudal requerido por el consumo de madera (QMa)**")
     col1, col2 = st.columns([2, 2])
-    image3 = Image.open('imagenes/3.jpg')
+    image3 = Image.open('imagenes/rsz_3.jpg')
     col1.image(image3)
     with col1.expander("Info", expanded=False):
         st.info("""
@@ -43,7 +43,7 @@ def calculo():
         - u = Factor de producción, de acuerdo a escala establecida en el segundo párrafo del literal d) del artículo 252 del reglamento
         - T = Producción en toneladas métricas húmedas por Guardia.
         """)
-    image4 = Image.open('imagenes/4.jpg')
+    image4 = Image.open('imagenes/rsz_4.jpg')
     col1.image(image4)
     T = col2.number_input('Factor de producción',value=10000)
     u = col2.number_input('Producción por Guardia',value=0)
@@ -57,7 +57,7 @@ def calculo():
     #########################
     st.write("**c) Caudal requerido por temperatura en las labores de trabajo (QTe)**")
     col1, col2 = st.columns([2, 2])
-    image5 = Image.open('imagenes/5.jpg')
+    image5 = Image.open('imagenes/rsz_5.jpg')
     col1.image(image5)
     with col1.expander("Info", expanded=False):
         st.info("""
@@ -67,7 +67,7 @@ def calculo():
         - A = Área de la labor promedio.
         - N = Número de niveles con temperatura mayor a 23°C, de acuerdo a escala establecida en el tercer párrafo del literal d) del artículo 252 del reglamento.
         """)
-    image6 = Image.open('imagenes/6.jpg')
+    image6 = Image.open('imagenes/rsz_6.jpg')
     col1.image(image6)
     vm = col2.number_input('Velocidad mínima',value=30)
     A = col2.number_input('Área de la labor promedio',value=21.375)
@@ -82,7 +82,7 @@ def calculo():
     #########################
     st.write("**d) Caudal requerido por equipo con motor Petrolero (QEq)    **")
     col1, col2 = st.columns([2, 2])
-    image7 = Image.open('imagenes/7.jpg')
+    image7 = Image.open('imagenes/rsz_7.jpg')
     col1.image(image7)
     with col1.expander("Info", expanded=False):
         st.info("""
@@ -92,7 +92,7 @@ def calculo():
         - Dm = Disponibilidad mecánica promedio de los equipos (%)
         - Fu = Factor de utilización promedio de los equipos (%)
         """)
-    image15= Image.open('imagenes/15.jpg')
+    image15= Image.open('imagenes/rsz_15.jpg')
     col1.image(image15)
     hp = col2.number_input('Total de HP efectivos',value=303.8)
     with col2.expander("Advertencia", expanded=True):
@@ -108,11 +108,11 @@ def calculo():
     st.write("  ")
     #############################################
     st.write("**e) Caudal requerido por fugas (QFu)**")
-    image9 = Image.open('imagenes/9.jpg')   
+    image9 = Image.open('imagenes/rsz_9.jpg')   
     st.image(image9)
-    image8 = Image.open('imagenes/8.jpg')
+    image8 = Image.open('imagenes/rsz_8.jpg')
     st.image(image8)
-    image1 = Image.open('imagenes/1.jpg')
+    image1 = Image.open('imagenes/rsz_1.jpg')
     st.image(image1)
     dfs=df3.sum().values
     dfs=pd.DataFrame(dfs,columns=["Qt1"], index =['m³/min', 'CFM'])
