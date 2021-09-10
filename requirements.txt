@@ -4,4 +4,3 @@ plotly.express
 seaborn
 numpy
 matplotlib
-PIL
