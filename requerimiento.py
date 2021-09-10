@@ -1,9 +1,4 @@
 import streamlit as st
-import numpy as np
-import pandas as pd
-from traitlets.traitlets import default
-import plotly.express as px
-import matplotlib.pyplot as plt
 from PIL import Image
 
     
