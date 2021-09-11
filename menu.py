@@ -12,7 +12,7 @@ def principal():
     #col1.write(f'\n  Si quieres quieres conocer el codigo de esta app escrito en python puedes visitarlo en el siguiente enlace de {lgit}.', unsafe_allow_html=True)
     #col1.write("Tambien puedes visitar nuestra pagina web IDL Mining donde subimos post sobre programacion orientado a la ingeniera de minas y nos dedicamos a la creacion de Modelos de Deep Learning.")
     col1.markdown("<div style='text-align: justify'>Bienvenidos en esta app donde se podra calcular el requerimiento de aire necesario para Minería Subterránea.</div>", unsafe_allow_html=True)
-    col1.markdown("<div style='text-align: justify'>Si quieres quieres conocer el codigo de esta app escrito en python puedes visitarlo en el siguiente enlace <a style='color:black; font-size:110% ;' href='https://github.com/CartagenaMinas/VentiST' target='_blank'><i class='fa fa-rocket'></i>GitHub</a> </div>", unsafe_allow_html=True)
+    col1.markdown("<div style='text-align: justify'>Si quieres conocer el codigo de esta app escrito en python puedes visitarlo en el siguiente enlace <a style='color:black; font-size:110% ;' href='https://github.com/CartagenaMinas/VentiST' target='_blank'><i class='fa fa-rocket'></i>GitHub</a> </div>", unsafe_allow_html=True)
     col1.markdown("<div style='text-align: justify'>Tambien puedes visitar nuestra pagina web IDL Mining donde subimos post sobre programacion orientado a la ingeniera de minas y nos dedicamos a la creacion de Modelos de Deep Learning.</div>", unsafe_allow_html=True)
     
     image = Image.open('imagenes/rsz_31.jpg')
